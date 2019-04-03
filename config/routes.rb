@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   get  '/about',   to: 'static#about'
   get  '/contact', to: 'static#contact'
   get '/signup', to: 'users#new'
+  resources :users
 end
